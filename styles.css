@@ -1,0 +1,58 @@
+
+*{
+	font-family: 'SF UI Text';
+	margin: 0;
+	padding: 0;
+}
+
+h2{
+	font-size: 22px;
+	line-height: 26px;
+	color: #333333;
+}
+
+
+.header-inner-block{
+	display: flex;
+	margin-bottom: 43px;
+}
+
+.header-inner-block h3{
+	margin: 0;
+	padding: 0;
+	font-size: 16px;
+	line-height: 19px;
+	color: #333333;
+}
+
+.header-inner-block p{
+	margin: 0;
+	padding: 0;
+	font-size: 14px;
+	line-height: 20px;
+	color: #333333;
+}
+
+.delivery-icon{
+	width: 76.8px;
+	height: 50.37px;
+}
+
+.header-text{
+	margin-left: 20.2px;
+}
+
+
+@media screen and (max-width: 480px) {
+	body{
+		margin-top: 29px;
+		margin-left: 15px;
+	}
+	header{
+		margin-bottom: 43px;
+	}
+}
+
+
+@import url("./public/fonts/sfui/stylesheet.css")
+
