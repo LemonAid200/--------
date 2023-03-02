@@ -18,6 +18,8 @@ h2{
 	color: #333333;
 }
 
+
+
 header{
 	padding-top: 64px;
 	padding-bottom: 54px;
@@ -52,6 +54,30 @@ header{
 	width: 255px;
 	height: 299px;
 	text-align: center;
+	font-size: 18px;
+	line-height: 26px;
+	text-align: center;
+	border-radius: 5px;
+	margin-bottom: 30px;
+	border-radius: 5px;
+	border: 1px solid white;
+}
+
+.catalogue-item-card:hover{
+	background: #FFFFFF;
+	border: 1px solid #F4F4F4;
+	box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.05);
+	/* width: 253px;
+	height: 297px; */
+}
+
+.catalogue-item-card img{
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.catalogue-item-card .items-amount{
+	color: #828282;
 }
 
 li{
@@ -129,7 +155,20 @@ li .li-arrow{
 body{
 	/* background: #000; */
 	/* width: 100vw; */
+	padding-bottom: 57px;
+}
 
+html{
+
+	width: 100%;
+	max-width: 100%;
+	overflow-x: hidden;
+}
+
+body{
+	width: 100%;
+	max-width: 100%;
+	overflow-x: hidden;
 }
 
 .show-more-btn{
@@ -205,6 +244,20 @@ body{
 	right: 20px;
 }
 
+.hit-icon-browser{
+	position: absolute;
+	top: 15px;
+	right: 15px;
+	font-size: 13px;
+	line-height: 24px;
+	text-align: center;
+	color: #FFFFFF;
+	background: #9B51E0;
+	border-radius: 3px;
+	width: 48px;
+	height: 24px;
+}
+
 .item-image{
 	margin: 0 auto;
 	width: 225px;
@@ -232,6 +285,8 @@ body{
 
 .rating .star{
 	margin-right: 3px;
+	width: 20px;
+	height: 19px;
 }
 
 .rating .review{
@@ -288,15 +343,6 @@ body{
 	position: relative;
 }
 
-.fast-purchise-link::before{
-	content: "";
-  background: #EBF8FF;
-  position: absolute;
-	left: 0px;
-	top: -15px;
-  height: 1px;
-  width: 305px;
-}
 .mobile-only{
 	display: none;
 }
@@ -305,13 +351,48 @@ body{
 	display: block;
 } */
 
+.selling-hits{
+	display: flex;
+	flex-wrap: wrap;
+	max-width: 1160px;
+	/* margin: 0 auto; */
+	justify-content: space-between;
+	/* margin-top: 30px; */
+}
+
+.selling-hits .item-card{
+	width: 215px;
+}
+
+@media screen and (max-width: 1240px) {
+	.selling-hits{
+		padding: 0 15px;
+		background: green;
+	}
+	h1{
+		padding-left: 15px;
+	}
+}
+
 @media screen and (max-width: 480px) {
 	body{
 		background: white;
 	}
 
+
+	.fast-purchise-link::before{
+		content: "";
+		background: #EBF8FF;
+		position: absolute;
+		left: 0px;
+		top: -15px;
+		height: 1px;
+		width: 305px;
+	}
+
 	.main{
-		padding: 29px 15px 45px 15px;		
+		padding: 29px 15px 45px 15px;
+		background: red;	
 	}
 	header{
 		padding: 0;	
@@ -322,7 +403,7 @@ body{
 		padding-top: 29px;
 	}
 	.mobile-only{
-		display: contents;
+		display: block;
 	}
 	.browser-only{
 		display: none;
