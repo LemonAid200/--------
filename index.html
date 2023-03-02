@@ -9,50 +9,96 @@
 	<link rel="stylesheet" href="./public/fonts/sfui/stylesheet.css">
 </head>
 <body>
-	<header>
-		<div class="header-inner">
-			<div class="header-van header-inner-block">
-				<img src="./public/icons/delivery.svg" class="delivery-icon" alt="delivery-icon">
-				<div class="header-text">
-					<h3>Доставка по России</h3>
-					<p>Осуществляется транспортными компаниями или Почтой России</p>
-				</div>
-			</div>
-			<div class="browser-only header-van header-inner-block">
-				<img src="./public/icons/pay.svg" class="delivery-icon" alt="delivery-icon">
-				<div class="header-text">
-					<h3>On-line оплата на сайте</h3>
-					<p class="pay">Оплата производится банковской картой  и электронными деньгами</p>
-				</div>
-			</div><div class="browser-only header-van header-inner-block">
-				<img src="./public/icons/union.svg" class="delivery-icon" alt="delivery-icon">
-				<div class="header-text">
-					<h3>Система скидок</h3>
-					<p>Накопительные скидки и бонусная программа для наших клиентов</p>
-				</div>
+<header>
+	<div class="header-inner">
+		<div class="header-van header-inner-block">
+			<img src="./public/icons/delivery.svg" class="delivery-icon" alt="delivery-icon">
+			<div class="header-text">
+				<h3>Доставка по России</h3>
+				<p>Осуществляется транспортными компаниями или Почтой России</p>
 			</div>
 		</div>
-	</header>
+		<div class="browser-only header-van header-inner-block">
+			<img src="./public/icons/pay.svg" class="delivery-icon" alt="delivery-icon">
+			<div class="header-text">
+				<h3>On-line оплата на сайте</h3>
+				<p class="pay">Оплата производится банковской картой  и электронными деньгами</p>
+			</div>
+		</div><div class="browser-only header-van header-inner-block">
+			<img src="./public/icons/union.svg" class="delivery-icon" alt="delivery-icon">
+			<div class="header-text">
+				<h3>Система скидок</h3>
+				<p>Накопительные скидки и бонусная программа для наших клиентов</p>
+			</div>
+		</div>
+	</div>
+</header>
+<div class="main">
 
-<div class="mobile-only">
-	<h2>Популярные категории</h2>
+	<h1 class="browser-only">Каталог товаров</h1>
 
-	<ul>
-		<li><img src="./public/images/small images/mac.png" alt=""> 						<p class="li-name">  Компьютеры     			</p>	<p class="li-number">393</p><img class="li-arrow" src="./public/icons/arrow.svg" alt=""></li>
-		<li><img src="./public/images/small images/shorst.png" alt="">					<p class="li-name">  Одежда    		 			</p>		<p class="li-number">245</p><img class="li-arrow" src="./public/icons/arrow.svg" alt=""></li>
-		<li><img src="./public/images/small images/camra.png" alt="">						<p class="li-name">  Электроника    			</p>	<p class="li-number">456</p><img class="li-arrow" src="./public/icons/arrow.svg" alt=""></li>
-		<li><img src="./public/images/small images/videoregistrator.png" alt=""><p class="li-name"> Автотовары</p>							<p class="li-number">128</p><img class="li-arrow" src="./public/icons/arrow.svg" alt=""></li>
-		<li><img src="./public/images/small images/ball.png" alt="">						<p class="li-name">  Спорт и отдых  			</p>  <p class="li-number">197</p><img class="li-arrow" src="./public/icons/arrow.svg" alt=""></li>
-		<li><img src="./public/images/small images/baby-chair.png" alt="">				<p class="li-name">  Детские товары 	</p>			<p class="li-number">86 </p><img class="li-arrow" src="./public/icons/arrow.svg" alt=""></li>
-		<li><img src="./public/images/small images/tent.png" alt="">						<p class="li-name">  Туризм и рыбалка     </p>	<p class="li-number">92 </p><img class="li-arrow" src="./public/icons/arrow.svg" alt=""></li>
-		<li class="li-no-underline"><img src="./public/images/small images/saw.png" alt="">							<p class="li-name">  Инструмент     				</p><p class="li-number">104</p><img class="li-arrow" src="./public/icons/arrow.svg" alt=""></li>
-	</ul>
+	<div class="catalogue browser-only">
+		<div class="catalogue-item-card">
+			<img src="./public/images/refurb-2013-imac-215-gallery.png" alt="">
+			<p>Компьютеры</p>
+			<p>393 товара</p>
+		</div>	
+		<div class="catalogue-item-card">
+			<img src="./public/images/ekiden-mens-running-shorts-black.png" alt="">
+			<p>Одежда</p>
+			<p>245 товара</p>
+		</div>		
+		<div class="catalogue-item-card">
+			<img src="./public/images/camera.png" alt="">
+			<p>Электроника</p>
+			<p>456 товара</p>
+		</div>		
+		<div class="catalogue-item-card">
+			<img src="./public/images/videoregistrator.png" alt="">
+			<p>Автотовары</p>
+			<p>128 товара</p>
+		</div>		
+		<div class="catalogue-item-card">
+			<img src="/public/images/ball.png" alt="">
+			<p>Спорт и отдых/p>
+			<p>197 товара</p>
+		</div>		
+		<div class="catalogue-item-card">
+			<img src="./public/images/baby-chair.png" alt="">
+			<p>Детские товары</p>
+			<p>86 товара</p>
+		</div>		
+		<div class="catalogue-item-card">
+			<img src="./public/images/tent.png" alt="">
+			<p>Туризм и рыбалка<p>
+			<p>92 товара</p>
+		</div>		
+		<div class="catalogue-item-card">
+			<img src="/public/images/saw.png" alt="">
+			<p>Инструмент/p>
+			<p>104 товара</p>
+		</div>
+	</div>
 
-	<button class="show-more-btn">
-		Показать ещё
-		<img src="./public/icons/down_icon.svg" alt="">
-	</button>
-</div>
+	<div class="mobile-only">
+		<h2>Популярные категории</h2>
+
+		<ul>
+			<li><img src="./public/images/small images/mac.png" alt=""> 						<p class="li-name">  Компьютеры     			</p>	<p class="li-number">393</p><img class="li-arrow" src="./public/icons/arrow.svg" alt=""></li>
+			<li><img src="./public/images/small images/shorst.png" alt="">					<p class="li-name">  Одежда    		 			</p>		<p class="li-number">245</p><img class="li-arrow" src="./public/icons/arrow.svg" alt=""></li>
+			<li><img src="./public/images/small images/camra.png" alt="">						<p class="li-name">  Электроника    			</p>	<p class="li-number">456</p><img class="li-arrow" src="./public/icons/arrow.svg" alt=""></li>
+			<li><img src="./public/images/small images/videoregistrator.png" alt=""><p class="li-name"> Автотовары</p>							<p class="li-number">128</p><img class="li-arrow" src="./public/icons/arrow.svg" alt=""></li>
+			<li><img src="./public/images/small images/ball.png" alt="">						<p class="li-name">  Спорт и отдых  			</p>  <p class="li-number">197</p><img class="li-arrow" src="./public/icons/arrow.svg" alt=""></li>
+			<li><img src="./public/images/small images/baby-chair.png" alt="">				<p class="li-name">  Детские товары 	</p>			<p class="li-number">86 </p><img class="li-arrow" src="./public/icons/arrow.svg" alt=""></li>
+			<li><img src="./public/images/small images/tent.png" alt="">						<p class="li-name">  Туризм и рыбалка     </p>	<p class="li-number">92 </p><img class="li-arrow" src="./public/icons/arrow.svg" alt=""></li>
+			<li class="li-no-underline"><img src="./public/images/small images/saw.png" alt="">							<p class="li-name">  Инструмент     				</p><p class="li-number">104</p><img class="li-arrow" src="./public/icons/arrow.svg" alt=""></li>
+		</ul>
+
+		<button class="show-more-btn">
+			Показать ещё
+			<img src="./public/icons/down_icon.svg" alt="">
+		</button>
+	</div>
 
 
 	<div class="product-hits-intro">
@@ -97,5 +143,6 @@
 		<a class="fast-purchise-link">Купить в 1 клик</a>
 	</div>
 
+</div>
 </body>
 </html>
