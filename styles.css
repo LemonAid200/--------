@@ -367,7 +367,7 @@ body{
 @media screen and (max-width: 1240px) {
 	.selling-hits{
 		padding: 0 15px;
-		background: green;
+		/* background: green; */
 	}
 	h1{
 		padding-left: 15px;
@@ -392,7 +392,7 @@ body{
 
 	.main{
 		padding: 29px 15px 45px 15px;
-		background: red;	
+		/* background: red;	 */
 	}
 	header{
 		padding: 0;	
