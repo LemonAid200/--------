@@ -11,6 +11,27 @@ h2{
 	color: #333333;
 }
 
+header{
+	padding-top: 64px;
+	padding-bottom: 54px;
+}
+
+.header-inner{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	/* width: fit-content; */
+	/* margin-left: 50%;
+	transform: translate(-50%, 0); */
+
+
+}
+
+.header-text .pay{
+	width: 225px;
+}
+
 li{
 	display: flex;
 	align-items: center;
@@ -84,7 +105,7 @@ li .li-arrow{
 }
 
 body{
-	background: #000;
+	/* background: #000; */
 
 }
 
@@ -131,7 +152,7 @@ body{
 
 .item-card{
 	height: 532px;
-	/* width: 100%; */
+	max-width: 255px;
 	background: #FFFFFF;
 	border: 1px solid #F2F2F2;
 	box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.05);
@@ -178,7 +199,8 @@ body{
 }
 
 .item-buttons{
-	position: relative;
+	display: flex;
+	flex-wrap: nowrap;
 }
 
 .item-buttons .favorite{
@@ -252,7 +274,13 @@ body{
   height: 1px;
   width: 305px;
 }
+.mobile-only{
+	display: none;
+}
 
+/* .browser-only{
+	display: block;
+} */
 
 @media screen and (max-width: 480px) {
 	body{
@@ -260,7 +288,17 @@ body{
 		background: white;
 	}
 	header{
+		padding: 0;	
 		margin-bottom: 43px;
+	}
+	.header-inner{
+		height: 64px;
+	}
+	.mobile-only{
+		display: contents;
+	}
+	.browser-only{
+		display: none;
 	}
 }
 
