@@ -168,7 +168,7 @@ li .li-arrow{
 body{
 	/* background: #000; */
 	/* width: 100vw; */
-	padding-bottom: 57px;
+	/* padding-bottom: 57px; */
 }
 
 html{
@@ -376,9 +376,12 @@ body{
 	line-height: 17px;
 	text-align: center;
 	display: block;
-	margin: 36px auto 0 auto;
+	/* margin: 36px auto 0 auto; */
 	color: #2D9CDB;
-	position: relative;
+	position: absolute;
+	bottom: 15px;
+	left: 50%;
+	transform: translate(-50%, 0);
 }
 
 .mobile-only{
@@ -433,25 +436,19 @@ body{
 		background: white;
 	}
 	.item-card .price{
-		/* display: flex;
-		align-items: center;
-		margin-top: 20px;
-		margin-bottom: 20px; */
 		height: 26px;
 		font-size: 22px;
 	}
-
-
-	.fast-purchise-link::before{
+	.item-card::after{
 		content: "";
 		background: #EBF8FF;
 		position: absolute;
-		left: 0px;
-		top: -15px;
-		height: 1px;
-		width: 305px;
+		position: absolute;
+    left: 5.8%;
+    bottom: 48px;
+    height: 1px;
+    width: 88.4%;
 	}
-
 	.main{
 		padding: 29px 15px 45px 15px;
 		/* background: red;	 */
@@ -475,12 +472,13 @@ body{
 	.item-card{
 		margin: 0 auto;
 		height: 532px;
-		width: 345px;
-		position: relative;
+		width: 305px;
+		/* position: relative; */
+		background: #FFFFFF;
+		border: 1px solid #F2F2F2;
+		box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.05);
+		border-radius: 5px;
 	}
-
-
-
 	.cart-btn{
 		width: 230px;
 		height: 40px;
@@ -491,6 +489,15 @@ body{
 		border: none;
 		color: white;
 		margin: 20px 15px 20px 0px;
+	}
+}
+
+@media screen and (max-width: 320px){
+	.header-inner-block{
+		padding-left: 30px;
+	}
+	.item-card{
+		width: auto;
 	}
 }
 
