@@ -5,6 +5,10 @@
 	padding: 0;
 }
 
+html{
+	overflow-y: overlay;
+}
+
 h1{
 	font-size: 36px;
 	line-height: 43px;
@@ -47,7 +51,7 @@ header{
 	flex-wrap: wrap;
 	max-width: 1160px;
 	/* margin: 0 auto; */
-	justify-content: space-between;
+	justify-content: space-around;
 	margin-top: 30px;
 }
 
@@ -423,6 +427,12 @@ body{
 	}
 }
 
+@media screen and (max-width: 720px){
+	.hiddenBefore720{
+		display: none;
+	}
+}
+
 @media screen and (max-width: 550) {
 	.selling-hits{
 		max-width: 300px;
@@ -471,7 +481,7 @@ body{
 	}
 	.item-card{
 		margin: 0 auto;
-		height: 532px;
+		height: 492px;
 		width: 305px;
 		/* position: relative; */
 		background: #FFFFFF;
@@ -492,13 +502,19 @@ body{
 	}
 }
 
-@media screen and (max-width: 320px){
-	.header-inner-block{
-		padding-left: 30px;
-	}
+@media screen and (max-width: 370px){
 	.item-card{
 		width: auto;
 	}
+
+	.header-inner-block{
+		padding-left: 30px;
+	}
+}
+
+@media screen and (max-width: 320px){
+
+
 }
 
 
