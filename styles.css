@@ -419,6 +419,12 @@ body{
 	}
 }
 
+@media screen and (max-width: 1210px) {
+	.slider-buttons{
+		padding-right: 15px;
+	}
+}
+
 @media screen and (max-width: 801px) {
 	.selling-hits{
 		max-width: 600px;
@@ -499,6 +505,10 @@ body{
 		border: none;
 		color: white;
 		margin: 20px 15px 20px 0px;
+	}
+
+	.slider-buttons{
+		padding-right: 0;
 	}
 }
 
