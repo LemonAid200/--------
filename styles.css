@@ -73,7 +73,7 @@ header{
 }
 
 .header-text .pay{
-	width: 225px;
+	width: 250px;
 }
 
 .main{
@@ -130,6 +130,8 @@ li{
 	align-items: center;
 	height: 60px;
 	position: relative;
+	max-width: max-content;
+	margin: 0 auto;
 }
 
 li::after{
@@ -218,6 +220,11 @@ li .li-arrow{
 	position: relative;
 	padding: 20px 20px 20px 20px;
 	cursor: pointer;
+}
+
+.item-card p{
+	font-size: 14px;
+	line-height: 20px;
 }
 
 .item-card:hover{
@@ -396,6 +403,11 @@ li .li-arrow{
 }
 
 @media screen and (max-width: 720px){
+	h1{
+		font-size: 22px;
+		line-height: 26px;
+	}
+	
 	.hiddenBefore720{
 		display: none;
 	}
@@ -438,6 +450,11 @@ li .li-arrow{
 		margin-left: 0;
 		padding-top: 29px;
 	}
+
+	.header-inner-block p{
+		width: 230px;
+	}
+
 	.mobile-only{
 		display: block;
 	}
