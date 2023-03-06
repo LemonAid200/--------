@@ -211,6 +211,8 @@ li .li-arrow{
 	margin-top: 30px;
 }
 
+
+
 .item-card{
 	height: 446px;
 	width: 255px;
@@ -371,9 +373,12 @@ li .li-arrow{
 
 .selling-hits{
 	display: flex;
-	flex-wrap: wrap;
+	/* flex-wrap: wrap; */
+	overflow-y: hidden;
+	min-height: fit-content;
 	max-width: 1160px;
 	justify-content: space-between;
+	overflow-x: scroll;
 }
 
 .selling-hits .item-card{
@@ -438,6 +443,21 @@ li .li-arrow{
     height: 1px;
     width: 88.4%;
 	}
+
+	.selling-hits{
+		/* margin: 0 -15px; */
+	}
+
+	.selling-hits .item-card{
+		width: auto;
+	}
+
+	.item-card-wrapper{
+		width: 100%;
+		flex: 1 1 auto;
+		margin: 0 5px;
+	}
+	
 	.main{
 		padding: 29px 15px 45px 15px;
 	}
