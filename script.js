@@ -3,26 +3,18 @@ const slider = document.querySelector('.selling-hits')
 
 let count = 0
 let width
-
-let mobileWidthItem = 305
-let browserWidthItem = 215
-
 let amountOfPages = sliderItemsWrappers.length - 1
 
 
 function init() {
-	console.log('resize')
 	width = document.querySelector('.selling-hits').offsetWidth
 
-	console.log(width)
-	if (width < 520){
+	if (width < 570){
 		sliderItemsWrappers.forEach(item => { item.style.width = width + 'px'} )
 		amountOfPages = sliderItemsWrappers.length - 1
-		console.log(sliderItemsWrappers[0].style.width)
 	} else if(width < 780){
 		sliderItemsWrappers.forEach(item => { item.style.width = width / 2 + 'px'} )
 		amountOfPages = sliderItemsWrappers.length / 2 - 1
-		console.log(sliderItemsWrappers[0].style.width)
 	} else if(width < 1100){
 		sliderItemsWrappers.forEach(item => { item.style.width = width / 3 + 'px'} )
 		amountOfPages = Math.ceil(sliderItemsWrappers.length / 3 - 1)
@@ -34,11 +26,10 @@ function init() {
 }
 
 function updateSlide(){
-	// alert('Hello world')
 	document.querySelector('.selling-hits-slider').style.transform = `translate(${-count * width}px, 0)`
 }
 
-addEventListener('resize', init)
+addEventListener('resize', () => {count = 0; init()})
 
 document.getElementById('slider-button-left').addEventListener('click', () => {
 	if (count === 0) return

@@ -73,7 +73,7 @@ header{
 
 .main{
 	max-width: 1160px;
-	margin: 5px auto;
+	margin: 0 auto;
 }
 
 .catalogue{
@@ -82,6 +82,8 @@ header{
 	max-width: 1060px;
 	justify-content: space-around;
 	margin-top: 30px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .catalogue-item-card{
@@ -210,7 +212,6 @@ li .li-arrow{
 
 .item-card{
 	height: 476px;
-	/* width: 255px; */
 	background: #FFFFFF;
 	border: 1px solid white;	
 	border-radius: 5px;
@@ -219,7 +220,6 @@ li .li-arrow{
 	cursor: pointer;
 	display: block;
 	padding-bottom: 10px;
-	/* flex: 0 0 calc(100% - 43px); */
 }
 
 .item-card p{
@@ -369,17 +369,14 @@ li .li-arrow{
 
 .selling-hits{
 	display: flex;
-	/* flex-wrap: wrap; */
 	overflow: hidden;
 	min-height: fit-content;
 	max-width: 1160px;
 	justify-content: space-between;
-	/* overflow-x: scroll; */
 }
 
 .selling-hits-slider{
 	display: flex;
-	/* overflow: hidden; */
 	transition: all ease 1s;
 }
 
@@ -389,9 +386,6 @@ li .li-arrow{
 }
 
 @media screen and (max-width: 1240px) {
-	.selling-hits{
-		/* padding: 0 15px; */
-	}
 	h1{
 		padding-left: 15px;
 	}
@@ -421,14 +415,7 @@ li .li-arrow{
 	}
 }
 
-@media screen and (max-width: 550) {
-	.selling-hits{
-		max-width: 300px;
-		margin: 0 auto;
-	}
-}
-
-@media screen and (max-width: 520px) {
+@media screen and (max-width: 570px) {
 	body{
 		background: white;
 	}
@@ -445,20 +432,9 @@ li .li-arrow{
     width: 88.4%;
 	}
 
-	.selling-hits{
-		/* margin: 0 -15px; */
-	}
-
-
-	.selling-hits .item-card{
-		/* width: auto; */
-	}
+	
 
 	.item-card-wrapper{
-		/* width: 100%; */
-		/* flex: 1 1 auto; */
-		/* margin: 0 5px; */
-		/* display: block; */
 		flex-shrink: 0;
 		height: 580px;
 	}
@@ -511,10 +487,6 @@ li .li-arrow{
 }
 
 @media screen and (max-width: 370px){
-	.item-card{
-		/* width: auto; */
-	}
-
 	.header-inner-block{
 		padding-left: 30px;
 	}
