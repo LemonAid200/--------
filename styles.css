@@ -501,6 +501,11 @@ li .li-arrow{
 		width: 280;
 	}
 
+	.header-inner-block p{
+		display: none;
+		width: 180px;
+	}
+
 }
 
 @media screen and (max-width: 320px){
