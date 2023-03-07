@@ -73,13 +73,13 @@ header{
 
 .main{
 	max-width: 1160px;
-	margin: 0 auto;
+	margin: 5px auto;
 }
 
 .catalogue{
 	display: flex;
 	flex-wrap: wrap;
-	max-width: 1160px;
+	max-width: 1060px;
 	justify-content: space-around;
 	margin-top: 30px;
 }
@@ -460,6 +460,7 @@ li .li-arrow{
 		/* margin: 0 5px; */
 		/* display: block; */
 		flex-shrink: 0;
+		height: 580px;
 	}
 	
 	.main{
