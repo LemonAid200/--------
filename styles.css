@@ -90,7 +90,7 @@ header{
 }
 
 .catalogue-item-card{
-	width: 255px;
+	width: 215px;
 	height: 299px;
 	text-align: center;
 	font-size: 18px;
@@ -215,13 +215,15 @@ li .li-arrow{
 
 .item-card{
 	height: 446px;
-	width: 255px;
+	/* width: 255px; */
 	background: #FFFFFF;
 	border: 1px solid white;	
 	border-radius: 5px;
 	position: relative;
 	padding: 20px 20px 20px 20px;
 	cursor: pointer;
+	display: block;
+	/* flex: 0 0 calc(100% - 43px); */
 }
 
 .item-card p{
@@ -355,6 +357,7 @@ li .li-arrow{
 }
 
 
+
 .fast-purchise-link{
 	font-size: 14px;
 	line-height: 17px;
@@ -380,6 +383,12 @@ li .li-arrow{
 	justify-content: space-between;
 	overflow-x: scroll;
 }
+
+.selling-hits-slider{
+	display: flex;
+	overflow: hidden;
+}
+
 
 .selling-hits .item-card{
 	width: 215px;
@@ -448,14 +457,16 @@ li .li-arrow{
 		/* margin: 0 -15px; */
 	}
 
+
 	.selling-hits .item-card{
-		width: auto;
+		/* width: auto; */
 	}
 
 	.item-card-wrapper{
-		width: 100%;
-		flex: 1 1 auto;
-		margin: 0 5px;
+		/* width: 100%; */
+		/* flex: 1 1 auto; */
+		/* margin: 0 5px; */
+		display: block;
 	}
 	
 	.main{
@@ -507,7 +518,7 @@ li .li-arrow{
 
 @media screen and (max-width: 370px){
 	.item-card{
-		width: auto;
+		/* width: auto; */
 	}
 
 	.header-inner-block{
