@@ -1,3 +1,4 @@
+@import url("./public/fonts/sfui/stylesheet.css");
 
 *{
 	font-family: 'SF UI Text';
@@ -339,7 +340,7 @@ li .li-arrow{
 	margin-top: 20px;
 	margin-bottom: 20px;
 	height: 22px;
-	font-size: 18x;
+	font-size: 18px;
 }
 
 .item-card .price p{
@@ -486,28 +487,14 @@ li .li-arrow{
 		color: white;
 		margin: 20px 15px 20px 0px;
 	}
-
 	.slider-buttons{
 		padding-right: 0;
 	}
 }
 
 @media screen and (max-width: 370px){
-		.item-card{
-		width: 280;
-	}
-
 	.header-inner-block p{
 		display: none;
 		width: 180px;
 	}
-
 }
-
-@media screen and (max-width: 320px){
-
-}
-
-
-@import url("./public/fonts/sfui/stylesheet.css")
-
