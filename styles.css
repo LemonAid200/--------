@@ -115,6 +115,7 @@ header{
 
 .catalogue-item-name{
 	height: 50px;
+	transition: all ease 500ms;
 }
 
 .catalogue-item-card .items-amount{
@@ -352,6 +353,10 @@ li .li-arrow{
 	margin: 20px 20px 22px 0px;
 }
 
+.item-card-wrapper{
+	display: flex;
+	justify-content: center;
+}
 
 
 .fast-purchise-link{
@@ -437,6 +442,8 @@ li .li-arrow{
 	.item-card-wrapper{
 		flex-shrink: 0;
 		height: 580px;
+		display: flex;
+    justify-content: center;
 	}
 	
 	.main{
