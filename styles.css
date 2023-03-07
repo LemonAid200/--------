@@ -5,17 +5,12 @@
 	padding: 0;
 }
 
-/* html{
-	overflow-y: overlay;
-	width: 100%;
-	max-width: 100%;
-	overflow-x: hidden;
-} */
 
 body{
 	width: 100%;
 	max-width: 100%;
 	overflow-x: hidden;
+	padding-bottom: 20px;
 }
 
 h1{
@@ -214,7 +209,7 @@ li .li-arrow{
 
 
 .item-card{
-	height: 446px;
+	height: 476px;
 	/* width: 255px; */
 	background: #FFFFFF;
 	border: 1px solid white;	
@@ -223,6 +218,7 @@ li .li-arrow{
 	padding: 20px 20px 20px 20px;
 	cursor: pointer;
 	display: block;
+	padding-bottom: 10px;
 	/* flex: 0 0 calc(100% - 43px); */
 }
 
@@ -364,10 +360,7 @@ li .li-arrow{
 	text-align: center;
 	display: block;
 	color: #2D9CDB;
-	position: absolute;
-	bottom: 15px;
-	left: 50%;
-	transform: translate(-50%, 0);
+	margin: 5px auto;
 }
 
 .mobile-only{
@@ -377,16 +370,17 @@ li .li-arrow{
 .selling-hits{
 	display: flex;
 	/* flex-wrap: wrap; */
-	overflow-y: hidden;
+	overflow: hidden;
 	min-height: fit-content;
 	max-width: 1160px;
 	justify-content: space-between;
-	overflow-x: scroll;
+	/* overflow-x: scroll; */
 }
 
 .selling-hits-slider{
 	display: flex;
-	overflow: hidden;
+	/* overflow: hidden; */
+	transition: all ease 1s;
 }
 
 
@@ -396,7 +390,7 @@ li .li-arrow{
 
 @media screen and (max-width: 1240px) {
 	.selling-hits{
-		padding: 0 15px;
+		/* padding: 0 15px; */
 	}
 	h1{
 		padding-left: 15px;
@@ -434,7 +428,7 @@ li .li-arrow{
 	}
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 520px) {
 	body{
 		background: white;
 	}
@@ -442,13 +436,11 @@ li .li-arrow{
 		height: 26px;
 		font-size: 22px;
 	}
-	.item-card::after{
-		content: "";
+	.item-card-line{
 		background: #EBF8FF;
-		position: absolute;
-		position: absolute;
-    left: 5.8%;
-    bottom: 48px;
+    display: block;
+		border-top: 1px solid #EBF8FF;
+		margin: 0 auto;
     height: 1px;
     width: 88.4%;
 	}
@@ -466,7 +458,8 @@ li .li-arrow{
 		/* width: 100%; */
 		/* flex: 1 1 auto; */
 		/* margin: 0 5px; */
-		display: block;
+		/* display: block; */
+		flex-shrink: 0;
 	}
 	
 	.main{
@@ -494,8 +487,8 @@ li .li-arrow{
 	}
 	.item-card{
 		margin: 0 auto;
-		height: 492px;
-		width: 305px;
+		height: 522px;
+		width: 303px;
 		background: #FFFFFF;
 		border: 1px solid #F2F2F2;
 		box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.05);
@@ -524,9 +517,14 @@ li .li-arrow{
 	.header-inner-block{
 		padding-left: 30px;
 	}
+		.item-card{
+		width: 280;
+	}
+
 }
 
 @media screen and (max-width: 320px){
+
 }
 
 
